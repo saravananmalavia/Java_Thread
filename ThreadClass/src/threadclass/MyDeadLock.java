@@ -17,11 +17,11 @@ public class MyDeadLock {
     Thread trd1 = new Thread("My Thread 1"){
         public void run(){
             while(true){
-               synchronized(str1){
-                   synchronized(str2){
+              // synchronized(str1){
+                  // synchronized(str2){
                         System.out.println("Thread 1" + str1 + str2);
-                    }
-               }
+                   // }
+               //}
            }
         }
     };

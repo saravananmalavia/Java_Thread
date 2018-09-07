@@ -40,7 +40,7 @@ class Second extends Thread
  }
  public void run()
  {
-      synchronized(fobj) 
+     synchronized(fobj) 
       {
   fobj.display(msg);
       }
